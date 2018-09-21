@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  title: 今日はおやすみ
+  body: 今日は仕事を休んで、公園で読書をした。
+
+two:
+  id: 2
+  title: 今日の天気
+  body: 今日は雨が降ったあと、虹が出ていて綺麗だった。

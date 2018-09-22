@@ -1,4 +1,6 @@
 <%= form_with(model: diary, local: true) do |form| %>
+<!-- model: diaryと指定し、この指定を受けてこのファイルではDiaryモデルに関連づいた入力フォームが作られる -->
+
   <% if diary.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(diary.errors.count, "error") %> prohibited this diary from being saved:</h2>

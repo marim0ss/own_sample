@@ -29,6 +29,7 @@ class DiariesController < ApplicationController
     respond_to do |format|
       if @diary.save
         format.html { redirect_to @diary, notice: 'Diary was successfully created.' }
+        # @diary...showの画面へのURLの省略形。
         format.json { render :show, status: :created, location: @diary }
       else
         format.html { render :new }
@@ -71,5 +72,6 @@ class DiariesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def diary_params
       params.require(:diary).permit(:title, :body)
+      # => name属性がdiary[:title],diary[:body]のデータのみを受けつける
     end
 end

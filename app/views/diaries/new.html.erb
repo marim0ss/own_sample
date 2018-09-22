@@ -1,5 +1,10 @@
 <h1>New Diary</h1>
 
 <%= render 'form', diary: @diary %>
+<!-- renderメソッド：このビューとは別のビューを呼び出している -->
+<!-- 使いまわせる共通ビューとして１つにまとめ、そこからこのビューへ呼び出している -->
+
+<!-- @diary... newアクションで指定したもの。-->
+<!-- diary: @diary   <= @diaryにはdiaryという変数でアクセスできる、と指定している-->
 
 <%= link_to 'Back', diaries_path %>

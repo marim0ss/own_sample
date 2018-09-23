@@ -50,6 +50,7 @@ div {
   color: green;
 }
 
+// エラーが発生した時に、titleとbodyフォームに自動的にこのクラスが付けられる
 .field_with_errors {
   padding: 2px;
   background-color: red;
@@ -63,6 +64,7 @@ div {
   margin-bottom: 20px;
   background-color: #f0f0f0;
 
+  // 入れ子。error_explanationの下のh2タグに適用されるスタイル
   h2 {
     text-align: left;
     font-weight: bold;

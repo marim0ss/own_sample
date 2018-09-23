@@ -70,6 +70,7 @@ class DiariesController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
+    # フォームから取得した値を受け取る
     def diary_params
       params.require(:diary).permit(:title, :body)
       # => name属性がdiary[:title],diary[:body]のデータのみを受けつける

@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: 山田太郎
-  nickname: タロ
-  age: 20
-  height: 171
-  mobile: 090-0000-0000
-  email: tarou@sample.com
+  name: MyString
+  nickname: MyString
+  age: 1
+  height: 1.5
+  mobile: MyString
+  email: MyString
 
 two:
-  name: 田中花子
-  nickname: ハナ
-  age: 10
-  height: 150
-  mobile: 080-1111-1111
-  email: hanako@fixture.co.jp
+  name: MyString
+  nickname: MyString
+  age: 1
+  height: 1.5
+  mobile: MyString
+  email: MyString

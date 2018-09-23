@@ -4,6 +4,11 @@ class Diary < ApplicationRecord
 
   validate :proper_title_and_body  # validate(単数形)..独自の検証ルール
 
+  # scope...検索条件に自分で決めたnewestという名前をつける
+    # 過去１週間以内に作成されたデータを検索する   -> Diary.newsetで使用
+  scope :newest, -> { where(created_at: 1.week.ago..Time.now)}
+
+
 
   # 独自の検証ルールを作るため、検証ルール用のメソッドを定義
   private
